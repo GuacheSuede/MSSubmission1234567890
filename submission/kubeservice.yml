@@ -1,0 +1,64 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: bollinger-service 
+spec:
+  selector:
+    app: bollinger 
+  type: NodePort
+  ports:
+  - protocol: TCP
+    nodePort: 30090 
+    port: 8080
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: rsi-service 
+spec:
+  selector:
+    app: rsi 
+  type: NodePort
+  ports:
+  - protocol: TCP
+    nodePort: 30091
+    port: 8080
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: ema-service 
+spec:
+  selector:
+    app: ema 
+  type: NodePort
+  ports:
+  - protocol: TCP
+    nodePort: 30092
+    port: 8080 
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: sma-service 
+spec:
+  selector:
+    app: sma 
+  type: NodePort
+  ports:
+  - protocol: TCP
+    nodePort: 30093 
+    port: 8080 
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: macd-service 
+spec:
+  selector:
+    app: macd 
+  type: NodePort
+  ports:
+  - protocol: TCP
+    nodePort: 30094 
+    port: 8080 

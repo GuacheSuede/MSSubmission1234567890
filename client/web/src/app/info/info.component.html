@@ -1,0 +1,24 @@
+<div class="tickerselection">
+  <div 
+    class="tickerselectionitem" 
+    *ngFor="let ticker of tickers"
+    (click)="get_ticker_data(ticker.split(' - ')[0])"
+    >{{ticker}}</div>
+</div>
+<div class="tickerqselection">
+  <div 
+    class="tickerqselectionitem"
+    *ngFor="let ticker_date of ticker_dates"
+    (click)="display_ticker_data(ticker_date)"
+    >{{ticker_date}}</div>
+</div>
+
+<div class="tickerinfoview" >
+  <span *ngIf="current_ticker_displayed">
+  <div 
+  
+  class="tickerinfoitem"
+  *ngFor="let ticker_item of object_keys(current_ticker_display)"
+  >{{ticker_item}}  <span> --- </span>{{current_ticker_display[ticker_item] ? current_ticker_display[ticker_item] : 'NOT AVAILABLE'}}</div>
+</span>
+</div>

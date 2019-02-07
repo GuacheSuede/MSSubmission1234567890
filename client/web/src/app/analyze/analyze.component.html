@@ -1,0 +1,17 @@
+<ng-monaco-editor modelUri="file:text.js" [options]="options" [(ngModel)]="precompiled_code" (change)="log()"></ng-monaco-editor>
+
+<!--<textarea></textarea>-->
+<div class="analyzemenu">
+    <div class="analyzemenucompile" (click)="compile_code()">Compile</div>
+    <div class="analyzeclose" (click)="close_graph()">Close</div>
+    <h2 class="orderstitle">Buys</h2>    
+    <ul class="ordersitem">
+      <li *ngFor="let b of buys_list"> {{ b[0] }} | {{ b[1] }} </li>
+    </ul>
+    <h2 class="orderstitle">Sells</h2>
+    <ul class="ordersitem">
+      <li *ngFor="let s of sells_list"> {{ s[0] }} | {{ s[1] }} </li>
+    </ul>
+</div>
+
+<canvas id="graphviewid" class="graphview"  width="1550" height="890" [ngClass]="{'displaynone': !display_graph}" > </canvas>

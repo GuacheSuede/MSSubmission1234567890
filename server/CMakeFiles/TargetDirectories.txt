@@ -1,0 +1,3 @@
+/home/justin/MSCVProject/server/CMakeFiles/rebuild_cache.dir
+/home/justin/MSCVProject/server/CMakeFiles/MSCVProject.dir
+/home/justin/MSCVProject/server/CMakeFiles/edit_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/MSCVProject.dir/main.cc.o  -o MSCVProject  -L/usr/local/lib -Wl,-rpath,/usr/local/lib:/home/justin/MSCVProject/server/PRICES_GET/lib /usr/local/lib/libboost_system.so lib/libcpr.a -lpthread -lr3 -lssl lib/libcurl.so -ldl -lpthread /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so /usr/lib/x86_64-linux-gnu/libz.so 

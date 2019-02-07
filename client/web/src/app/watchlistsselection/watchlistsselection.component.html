@@ -1,0 +1,18 @@
+<div class="watchlistselectionsidebar">
+  <p class="watchlistsselectionheader">Recent Watchlists</p>
+  <ul class="watchlistsselection">
+    <li 
+      class="watchlistselectionitem"
+      *ngFor="let watchlist of watchlistsdata"
+      (click)="select_watchlist(watchlist.name)">
+      {{watchlist.name}}
+    </li>
+  </ul>
+</div>    
+<div class="watchlistselectionmain">
+  <span *ngIf="selectedwatchlist">
+    <app-watchlistview [watchlist] = "selectedwatchlist"></app-watchlistview>
+  </span>
+</div>
+<app-watchlistcreation class="watchlistselectioncreate"></app-watchlistcreation>
+

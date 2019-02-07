@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/MSCVProject.dir/main.cc.o  -o MSCVProject  -L/usr/local/lib -Wl,-rpath,/usr/local/lib /usr/local/lib/libboost_system.so -lpthread -lr3 

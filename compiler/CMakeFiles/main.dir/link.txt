@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/main.dir/main.cc.o  -o main  -L/usr/local/lib -Wl,-rpath,/usr/local/lib /usr/local/lib/libboost_system.so /usr/local/lib/libboost_regex.so -lssl -lpthread 

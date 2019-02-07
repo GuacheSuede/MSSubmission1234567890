@@ -1,0 +1,114 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bollinger-ws-deployment
+  labels:
+    app: bollinger 
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: bollinger  
+  template:
+    metadata:
+      labels:
+        app: bollinger 
+    spec:
+      containers:
+      - name: bollinger 
+        image: guachesuede/bollinger_websocket_fast:latest
+        ports:
+        - name: http
+          containerPort: 8080 
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rsi-ws-deployment
+  labels:
+    app: rsi 
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: rsi  
+  template:
+    metadata:
+      labels:
+        app: rsi 
+    spec:
+      containers:
+      - name: rsi 
+        image: guachesuede/rsi_websocket_fast:latest
+        ports:
+        - name: http
+          containerPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ema-ws-deployment
+  labels:
+    app: ema 
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ema  
+  template:
+    metadata:
+      labels:
+        app: ema 
+    spec:
+      containers:
+      - name: ema 
+        image: guachesuede/ema_websocket_fast:latest
+        ports:
+        - name: http
+          containerPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sma-ws-deployment
+  labels:
+    app: sma 
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: sma  
+  template:
+    metadata:
+      labels:
+        app: sma 
+    spec:
+      containers:
+      - name: ema 
+        image: guachesuede/sma_websocket_fast:latest
+        ports:
+        - name: http
+          containerPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: macd-ws-deployment
+  labels:
+    app: macd 
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: macd  
+  template:
+    metadata:
+      labels:
+        app: macd 
+    spec:
+      containers:
+      - name: macd 
+        image: guachesuede/macd_websocket_fast:latest
+        ports:
+        - name: http
+          containerPort: 8080

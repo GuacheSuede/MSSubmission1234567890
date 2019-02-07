@@ -1,0 +1,2 @@
+16
+{"last_modification_time":1548181899,"language":1,"import_file":"/home/justin/MSCVProject/server/WATCHLIST_GET/CMakeFiles/CheckIncludeFiles/HAVE_LBER_H.c","args_hash":10433645398913005206,"includes":[],"dependencies":[],"skipped_by_preprocessor":[],"types":[],"funcs":[{"id":0,"usr":7924728095432766067,"detailed_name":"int main()","short_name_offset":4,"short_name_size":4,"kind":12,"storage":1,"hover":"","comments":"","declarations":[],"spell":"5:5-5:9|-1|1|2","extent":"5:1-5:26|-1|1|0","bases":[],"derived":[],"vars":[],"uses":[],"callees":[]}],"vars":[]}

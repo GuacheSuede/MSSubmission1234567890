@@ -1,0 +1,2 @@
+how do we save vim bookmarks ? 
+how to refrence global variable inside fetch ?

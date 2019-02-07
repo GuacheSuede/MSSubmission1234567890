@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/justin/MSCVProject/compiler",
+  "command": "/usr/bin/c++   -I/home/justin/MSCVProject/compiler/cpr/include -isystem /usr/local/include    -std=gnu++17 -o CMakeFiles/main.dir/main.cc.o -c /home/justin/MSCVProject/compiler/main.cc",
+  "file": "/home/justin/MSCVProject/compiler/main.cc"
+}
+]
